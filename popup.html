@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>反相修正</title><link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <main aria-busy="true">
+    <h1>反相修正</h1>
+    <p id="tab-title" class="tab-title">正在读取标签页…</p>
+    <label class="control" for="enabled">
+      <span>启用修正</span>
+      <input id="enabled" type="checkbox" role="switch" aria-describedby="status hint" disabled>
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+    <p id="status" class="status" role="status" aria-live="polite">正在读取状态…</p>
+    <p id="error" class="error" role="alert" hidden></p>
+    <p id="hint" class="hint">翻转右声道，保留双声道输出。<br>换视频或刷新页面后自动恢复。</p>
+  </main>
+</body>
+</html>

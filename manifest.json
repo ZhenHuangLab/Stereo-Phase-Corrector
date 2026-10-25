@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "反相修正",
+  "version": "1.0.0",
+  "description": "按需翻转当前标签页的右声道极性，保留双声道输出。",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "tabCapture",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "反相修正",
+    "default_popup": "popup.html"
+  }
+}
